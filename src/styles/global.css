@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Monserrat';
+  src: url('/fonts/Monserrat-Black.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Monserrat', sans-serif;
+}
