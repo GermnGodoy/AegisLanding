@@ -3,35 +3,35 @@
     "name": "JinHao Zhang",
     "email": "jinhao.zhang@cdtm.com",
     "description": "Data Scientist",
-    "photo": "/jinhao.png",
+    "photo": "/jinhao.jpg",
     "linkedin": "https://linkedin.com/in/jinhao-zhang-guo-990490236"
   },
   {
     "name": "Germán Godoy",
     "email": "german.godoy@cdtm.com",
     "description": "Mathematician and Physicist",
-    "photo": "/german.png",
+    "photo": "/german.jpg",
     "linkedin": "https://linkedin.com/in/german-godoy-gutierrez"
   },
   {
     "name": "Luis Alvarez",
     "email": "luis.alvarez@cdtm.com", 
     "description": "Economist",
-    "photo": "/luis.png",
+    "photo": "/luis.jpg",
     "linkedin": "https://linkedin.com/in/luisjalvarezplaza"
   },
   {
     "name": "Daniel Poncelas",
     "email": "daniel.poncelas@cdtm.com",
     "description": "AI Engineer",
-    "photo": "/daniel.png",
+    "photo": "/daniel.jpg",
     "linkedin": "https://linkedin.com/in/daniel-poncelas-vargas"
   },
   {
     "name": "Inés Gonzalez",
     "email": "ines.gonzalez@cdtm.com",
     "description": "Business Analyst",
-    "photo": "/ines.png",
+    "photo": "/ines.jpg",
     "linkedin": "https://linkedin.com/in/inés-gonzález-garcía"
   }
 ]
