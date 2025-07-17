@@ -9,41 +9,10 @@ import '../styles/global.css';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="png" href="/oleee.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Aegis</title>
+		<title>Aegis - Smart Construction Protection</title>
+		<meta name="description" content="Smart protection for construction sites. Real-time monitoring, predictive analytics, and instant alerts." />
 	</head>
-	<body class="bg-white h-screen w-screen">
-    <!-- <header class="bg-amber-400 w-full rounded-b flex flex-row justify-between p-4 absolute top-0">
-      <a href="/">
-        ICON
-      </a>
-      <nav class="flex flex-row gap-5 font-bold text-white">
-        <a href="/" class="text-white">
-          <p class="text-black font-bold text-xl hover:text-amber-900 transition-all">
-            Home
-          </p>
-        </a>
-        <a href="/about" class="text-white">
-          <p class="text-black font-bold text-xl hover:text-amber-900 transition-all">
-            About
-          </p>
-        </a>
-        <a href="/" class="text-white">
-          <p class="text-black font-bold text-xl hover:text-amber-900 transition-all">
-            Contact
-          </p>
-        </a>
-      </nav>
-    </header> -->
-    <header class="bg-amber-400 w-full rounded-b p-4 text-black font-semibold text-center">
-      Page currently under construction 🦺. &nbsp;  Don't hesitate to &nbsp; <span><a class="text-white" href="mailto:contact.aegisbuild@gmail.com"><u class="text-amber-900 hover:text-black font-bold">contact us</u></a></span>.
-    </header>
-    <main class="h-full w-full bg-black flex flex-col justify-center items-center relative">
-      <slot/>
-    </main>
-    <!-- <footer class="bg-amber-400 w-full rounded-t flex flex-row justify-center p-4 bottom-30">
-      <p class="text-black font-bold abolute">
-        © 2025 Aegis
-      </p>
-    </footer> -->
+	<body class="bg-black min-h-screen">
+    <slot/>
 	</body>
 </html>

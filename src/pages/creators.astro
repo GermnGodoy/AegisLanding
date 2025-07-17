@@ -1,0 +1,64 @@
+---
+import '../styles/global.css';
+import Layout from '../layouts/Layout.astro';
+import CreatorCard from '../components/CreatorCard.astro';
+import Navigation from '../components/Navigation.astro';
+
+// Import the creators data
+import creators from '../../CREATORS.json';
+---
+
+<Layout>
+  <div class="min-h-screen bg-black text-white ">
+    <!-- Navigation -->
+    <Navigation />
+
+    <!-- Main content -->
+    <main class="container mx-auto px-4 py-16">
+      <!-- Page header -->
+      <div class="text-center mb-16">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-4">
+          Meet the <span class="text-amber-300">team</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+          Professionals from all the sectors that are about to revolutionize the construction industry.
+        </p>
+      </div>
+
+      <!-- Team grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {creators.map((creator) => (
+          <CreatorCard 
+            name={creator.name}
+            email={creator.email}
+            description={creator.description}
+            photo={creator.photo}
+            linkedin={creator.linkedin}
+          />
+        ))}
+      </div>
+
+      <!-- CTA section -->
+      <div class="text-center mt-16 p-8 bg-black border-2 border-gray-300/30 rounded-xl max-w-6xl mx-auto">
+        <h3 class="text-2xl font-bold mb-4">Ready to protect your construction site?</h3>
+        <p class="text-gray-300 mb-6">Join other of construction professionals on our waitlist.</p>
+        <a 
+          href="/" 
+          class="inline-block px-8 py-3 bg-amber-400 text-black font-bold rounded-lg hover:bg-amber-500 transition-colors"
+        >
+          Join the waitlist
+        </a>
+      </div>
+
+      <!-- Contact info -->
+      <div class="mt-16 text-center">
+        <p class="text-gray-400 text-sm">
+          Have questions? Reach out to us at 
+          <a href="mailto:contact.aegisbuild@gmail.com" class="text-amber-300 hover:text-amber-400 underline">
+            contact.aegisbuild@gmail.com
+          </a>
+        </p>
+      </div>
+    </main>
+  </div>
+</Layout>

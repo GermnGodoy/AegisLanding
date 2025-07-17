@@ -1,14 +1,64 @@
 ---
 import '../styles/global.css';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import WaitlistForm from '../components/WaitlistForm.astro';
+import Navigation from '../components/Navigation.astro';
 ---
 
 <Layout>
-  <h1 class="text-5xl text-white font-bold text-center">We are <span class="text-amber-300">Aegis</span></h1>
-	<img src="/oleee.png" class="w-70 m-10" alt="Aegis logo">
-  <h1 class="text-5xl text-white font-bold text-center"> <span class="text-amber-300">Protection</span> of Tommorrow</h1>
-  <h1 class="text-5xl text-white font-bold text-center">Available <span class="text-amber-300">Today</span></h1>
+  <div class="min-h-screen bg-black text-white">
+    <!-- Navigation -->
+    <Navigation />
+
+    <!-- Main content -->
+    <main class="container mx-auto px-4 pt-2 ">
+      <div class="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
+        <!-- Left side - Content -->
+        <div class="space-y-8 text-center lg:text-left">
+          <!-- Logo and branding -->
+          <div class="flex items-center space-x-4 justify-center lg:justify-start">
+            <img src="/oleee.png" alt="Aegis logo" class="w-16 h-16">
+            <h1 class="text-7xl font-bold text-amber-300">Aegis</h1>
+          </div>
+
+          <!-- Main headline -->
+          <div class="space-y-6">
+            <h2 class="text-5xl lg:text-6xl font-bold leading-tight">
+              Smart <span class="text-amber-300">protection</span> for construction sites
+            </h2>
+            <p class="text-2xl text-gray-300 max-w-2xl mx-auto lg:mx-0">
+              We want you to build, but to build safer
+            </p>
+          </div>
+
+          <!-- Waitlist form -->
+          <div class="space-y-4 flex flex-col items-center lg:items-start">
+            <WaitlistForm />
+            <p class="text-sm text-gray-400">
+              Join other construction professionals on the waitlist
+            </p>
+          </div>
+        </div>
+
+        <!-- Right side - Product showcase -->
+        <div class="flex justify-center items-center">
+          <img 
+            src="/test.png" 
+            alt="Aegis Product Showcase" 
+            class="w-full h-auto object-contain opacity-90 hover:opacity-100 transition-opacity scale-110"
+          >
+        </div>
+      </div>
+
+      <!-- Social proof or additional info -->
+      <div class="mt-7 text-center">
+        <p class="text-gray-400 text-sm">
+          Protecting construction sites across the nation • Contact us at 
+          <a href="mailto:contact.aegisbuild@gmail.com" class="text-amber-300 hover:text-amber-400 underline">
+            contact.aegisbuild@gmail.com
+          </a>
+        </p>
+      </div>
+    </main>
+  </div>
 </Layout>

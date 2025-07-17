@@ -1,0 +1,97 @@
+---
+// Navigation component with Home and Team links
+---
+
+<nav class="bg-black/80 backdrop-blur-sm sticky top-0 z-50">
+  <div class="container mx-auto px-4 py-4">
+    <div class="flex justify-center">
+      <!-- Navigation pills -->
+      <div class="bg-black/60 backdrop-blur-md rounded-full p-2 flex space-x-2 nav-container" id="nav-container">
+        <a 
+          href="/" 
+          class="nav-pill px-6 py-2 rounded-full font-medium transition-all duration-300 text-sm"
+          id="home-link"
+        >
+          Home
+        </a>
+        <a 
+          href="/creators" 
+          class="nav-pill px-6 py-2 rounded-full font-medium transition-all duration-300 text-sm"
+          id="team-link"
+        >
+          Team
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<style>
+  .nav-pill {
+    color: #9ca3af; /* gray-400 */
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    border: 1px solid transparent;
+  }
+
+  .nav-pill:hover {
+    color: #d1d5db; /* gray-300 */
+    border-color: #fbbf24; /* amber-400 */
+    box-shadow: 0 0 20px rgba(251, 191, 36, 0.2);
+    transform: translateY(-1px);
+  }
+
+  .nav-pill.active {
+    color: #000000; /* black */
+    font-weight: 600;
+  }
+
+  .nav-pill:focus {
+    outline: 2px solid #fbbf24;
+    outline-offset: 2px;
+  }
+
+  /* Sliding background animation */
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-container::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: calc(50% - 4px);
+    height: calc(100% - 16px);
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    border-radius: 9999px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    box-shadow: 0 4px 20px rgba(251, 191, 36, 0.3);
+  }
+
+  .nav-container.team-active::before {
+    transform: translateX(100%);
+  }
+
+  /* Smooth transitions for all elements */
+  .nav-pill {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+</style>
+
+<script>
+  // Set active state based on current page
+  const currentPath = window.location.pathname;
+  const homeLink = document.getElementById('home-link');
+  const teamLink = document.getElementById('team-link');
+  const navContainer = document.getElementById('nav-container');
+  
+  if (currentPath === '/') {
+    homeLink?.classList.add('active');
+  } else if (currentPath === '/creators') {
+    teamLink?.classList.add('active');
+    navContainer?.classList.add('team-active');
+  }
+</script>

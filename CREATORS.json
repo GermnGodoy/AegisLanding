@@ -1,0 +1,37 @@
+[
+  {
+    "name": "JinHao Zhang",
+    "email": "jinhao.zhang@cdtm.com",
+    "description": "Data Scientist",
+    "photo": "/jinhao.png",
+    "linkedin": "https://linkedin.com/in/jinhao-zhang-guo-990490236"
+  },
+  {
+    "name": "Germán Godoy",
+    "email": "german.godoy@cdtm.com",
+    "description": "Mathematician and Physicist",
+    "photo": "/german.png",
+    "linkedin": "https://linkedin.com/in/german-godoy-gutierrez"
+  },
+  {
+    "name": "Luis Alvarez",
+    "email": "luis.alvarez@cdtm.com", 
+    "description": "Economist",
+    "photo": "/luis.png",
+    "linkedin": "https://linkedin.com/in/luisjalvarezplaza"
+  },
+  {
+    "name": "Daniel Poncelas",
+    "email": "daniel.poncelas@cdtm.com",
+    "description": "AI Engineer",
+    "photo": "/daniel.png",
+    "linkedin": "https://linkedin.com/in/daniel-poncelas-vargas"
+  },
+  {
+    "name": "Inés Gonzalez",
+    "email": "ines.gonzalez@cdtm.com",
+    "description": "Business Analyst",
+    "photo": "/ines.png",
+    "linkedin": "https://linkedin.com/in/inés-gonzález-garcía"
+  }
+]
