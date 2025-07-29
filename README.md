@@ -8,7 +8,7 @@
 
 🔗 **Live Site**: [https://aegis-landing-delta.vercel.app](https://aegis-landing-delta.vercel.app)
 
-![Aegis Logo](https://github.com/user-attachments/assets/01c21202-9826-4896-84e7-f08f4df5b4fa)
+<img width="1920" height="1440" alt="592_1x_shots_so" src="https://github.com/user-attachments/assets/382f7beb-4400-429c-b414-01b8b0c531ef" />
 
 ## 📖 About the Project
 
